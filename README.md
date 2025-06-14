@@ -23,7 +23,7 @@ docker build -t my_app -f Dockerfile .
 
 ### Running mysql
 ```
-docker run -d -e MYSQL_ROOT_PASSWORD=pw  my_db
+docker run -d -e MYSQL_ROOT_PASSWORD=pw  
 ```
 
 
@@ -51,5 +51,5 @@ export APP_COLOR=blue
 ```
 ### Run the application, make sure it is visible in the browser
 ```
-docker run -p 8080:8080 -e APP_COLOR=$APP_COLOR -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e DBUSER=$DBUSER -e DBPWD=$DBPWD  my_app
+docker run -p 8080:8080 -e APP_COLOR=$APP_COLOR -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e DBUSER=$DBUSER -e DBPWD=$DBPWD  
 ```
